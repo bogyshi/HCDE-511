@@ -27,6 +27,28 @@ def grabUniqueNeighborhoods(x):
                 name = "UNIVERSITY DISTRICT"
             elif(name == "NEW HOLLY"):
                 name = "NEWHOLLY"
+            elif(name == "NORTH ADMIRAL"):
+                name = "ADMIRAL"
+            elif("MOUNT BAKER" in name):
+                name = "MT. BAKER"
+            elif("LAKECITY" in name):
+                name = "LAKE CITY"
+            elif(name == "FAUNTLEROY SW"):
+                name = "FAUNTLEROY"
+            elif(name == "MORGAN"):
+                name = "MORGAN JUNCTION"
+            elif("MADRONA" in name):
+                name = "MADRONA"
+            elif("PORTAGE BAY" in name):
+                name = "PORTAGEBAY"
+            elif("HARBOR ISLAND" in name):
+                name = "HARBOR ISLAND"
+            elif("SQUIRE PARK" in name):
+                name = "SQUIRE PARK"
+            elif("DUWAMISH" in name):
+                name = "DUWAMISH"
+            elif(name == "SANDPOINT"):
+                name = "SAND POINT"
             elif(name == "BITTERLAKE"):
                 name = "BITTER LAKE"
             elif("BALLARD" in name):
@@ -45,8 +67,6 @@ def grabUniqueNeighborhoods(x):
                 name = "DUNLAP"
             elif("WESTWOOD" in name):
                 name = "WESTWOOD"
-            elif("HARDBOR ISLAND" in name):
-                name = "HARBORISLAND"
             elif("DOWNTOWN COMMERCIAL" in name):
                 name = "DOWNTOWN COMMERCIAL CORE"
             elif("CHINATOWN/INTERNATIONAL DISTRICT" in name):
@@ -59,7 +79,7 @@ def grabUniqueNeighborhoods(x):
             crimeNeighbors2[name] = x[name]
         else:
             didntMakeit.add(row[neighborhoodIndex])
-
+    print("Not in the resulting data yet")
     print(didntMakeit)
     return crimeNeighbors2
 
@@ -131,6 +151,26 @@ def makeNewCSV(df):
                 name = "UNIVERSITY DISTRICT"
             elif(name == "NEW HOLLY"):
                 name = "NEWHOLLY"
+            elif(name == "NORTH ADMIRAL"):
+                name = "ADMIRAL"
+            elif(name == "MOUNT BAKER"):
+                name = "MT.BAKER"
+            elif(name == "FAUNTLEROY SW"):
+                name = "FAUNTLEROY"
+            elif(name == "MORGAN"):
+                name = "MORGAN JUNCTION"
+            elif("MADRONA" in name):
+                name = "MADRONA"
+            elif("PORTAGE BAY" in name):
+                name = "PORTAGEBAY"
+            elif("HARBOR ISLAND" in name):
+                name = "HARBOR ISLAND"
+            elif("SQUIRE PARK" in name):
+                name = "SQUIRE PARK"
+            elif("DUWAMISH" in name):
+                name = "DUWAMISH"
+            elif(name == "SANDPOINT"):
+                name = "SAND POINT"
             elif(name == "BITTERLAKE"):
                 name = "BITTER LAKE"
             elif("BALLARD" in name):
@@ -149,8 +189,6 @@ def makeNewCSV(df):
                 name = "DUNLAP"
             elif("WESTWOOD" in name):
                 name = "WESTWOOD"
-            elif("HARDBOR ISLAND" in name):
-                name = "HARBORISLAND"
             elif("DOWNTOWN COMMERCIAL" in name):
                 name = "DOWNTOWN COMMERCIAL CORE"
             elif("CHINATOWN/INTERNATIONAL DISTRICT" in name):
